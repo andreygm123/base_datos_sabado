@@ -84,3 +84,8 @@ ON tbl_estudiante.id_carrera = tbl_carrera.id_carrera
 JOIN tbl_facultad
 ON tbl_carrera.id_facultad = tbl_facultad.id_facultad
 ORDER BY tbl_carrera.id_carrera, tbl_facultad.id_facultad;
+
+
+UPDATE 
+UPDATE NombtrTabla SET  campoM = ValorM, camposM = Valor
+WHERE (condicion)

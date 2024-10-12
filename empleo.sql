@@ -47,3 +47,5 @@ CREATE TABLE tbl_area(
     nobre VARCHAR(20) NOT NULL,
     PRIMARY KEY(id_area)
 )
+
+

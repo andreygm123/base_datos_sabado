@@ -32,3 +32,16 @@ CREATE TABLE tbl_facultad(
     nombre VARCHAR(20) NOT NULL,
     PRIMARY KEY(id_facultad)
 )
+
+CREATE TABLE tbl_profesores(
+    id_profesores INT NOT NULL,
+    nombre VARCHAR(20) NOT NULL,
+    id_departamento INT NOT NULL,
+    correo_corpor VARCHAR(20) NOT NULL,
+    celular INT NOT NULL,
+    id_facultad INT (10) NOT NULL,
+    PRIMARY KEY(id_profesores),
+    FOREIGN KEY(id_facultad) REFERENCES tbl_facultad(id_facultad)
+)
+
+
